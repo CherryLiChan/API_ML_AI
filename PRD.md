@@ -29,9 +29,13 @@ Goals | 实现遗失证件与捡到证件的同学之间的联系
 ## 背景和战略契合
 丢失证件的人不在少数，尤其是在大学校园内，大学生最容易丢失饭卡，但丢失和捡到双方却缺乏联系的渠道。本产品即是为这两者之间提供一个联系的桥梁。
 
-## API(Face++)
-1. 人脸识别
-2. 图像识别 + 信息抽取/分析/分类
+## API
+- 人脸识别
+- 图像识别 + 信息抽取/分析/分类
+1. [Face++API](https://www.faceplusplus.com.cn/card-recognition/) [Face++案例](https://www.cnblogs.com/yijialong/p/9072405.html)
+2. [聚合数据 特别要求](https://www.juhe.cn/docs/api/id/153)：根据上传的图片文件和证件类型，进行证件识别结果返回,证件越清晰，识别准确率越高，建议图像分辨率为300DPI，建议图像文件大小在200KB以下。拍摄时请不要选择过高的分辨率拍摄，一方面造成图片过大，不利于传输，一方面分辨率过高也会影响识别率。拍摄时可以选择1280 * 960分辨率拍摄，低一些的分辨率也可以选择，但是要确保图像文字清晰。
+3. [其他](http://apistore.baidu.com/astore/classificationservicelist.html)
+![流程图](https://img-blog.csdn.net/20170331173343935?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhbmd6bmluZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 
 ## 假设
 情况 | 详情
