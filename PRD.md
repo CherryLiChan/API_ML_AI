@@ -22,9 +22,7 @@
 header 1 | header 2
 ---|---
 文件状态 | 没有开始
-设计师 | Cherry婵
-开发人员 | Cherry婵
-QA | Cherry婵
+设计&开发 | Cherry婵
 
 ## 目标
 实现识别+匹配
