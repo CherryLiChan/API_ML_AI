@@ -29,7 +29,7 @@ Goals | 实现遗失证件与捡到证件的同学之间的联系
 ## 背景和战略契合
 丢失证件的人不在少数，尤其是在大学校园内，大学生最容易丢失饭卡，但丢失和捡到双方却缺乏联系的渠道。本产品即是为这两者之间提供一个联系的桥梁。
 
-## API
+## API & AI
 - 人脸识别
 - 图像识别 + 信息抽取/分析/分类
 1. [Face++API](https://www.faceplusplus.com.cn/card-recognition/) [Face++案例](https://www.cnblogs.com/yijialong/p/9072405.html)
