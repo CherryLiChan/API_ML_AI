@@ -25,7 +25,8 @@ QA(领头的测试者) | Cherry婵
 
 两者的联系渠道的缺失导致了饭卡资源的浪费。
 
-【插图】
+![朋友圈找饭卡](https://note.youdao.com/yws/api/personal/file/97A8C3508D9044A5A44AE4F8DA476A19?method=download&shareKey=81e350318b2449f9bc8b0f8f5ba8c318)
+![为找回饭卡写的超强文案](https://note.youdao.com/yws/api/personal/file/06DEE52B1BC341F1A94C58EFDA7C790A?method=download&shareKey=afc6a71820a2ced35709925dcfa6233b)
 
 # strategic fit: 战略契合处
 1. 本产品通过让用户输入学号姓名头像等信息搭建数据库
@@ -41,7 +42,7 @@ QA(领头的测试者) | Cherry婵
 # User portrait：用户画像
 拥有饭卡、丢失饭卡、见到饭卡的在校大学生或公司员工。
 
-【插图】
+![使用饭卡](https://tse1-mm.cn.bing.net/th?id=OIP.TVMEb_cGdhajYYnwrB5THwHaFj&w=256&h=190&c=7&o=5&dpr=1.1&pid=1.7)
 
 # Requirements：需求
 ＃ | 标题 | 用户案例 | 重要程度 | 笔记
@@ -53,10 +54,10 @@ QA(领头的测试者) | Cherry婵
 # User interaction and design：使用者交互及设计
 
 ## 产品功能架构
-【产品功能架构】
+![产品功能架构图](https://note.youdao.com/yws/api/personal/file/EF0E2F6E2EA8436E86CB520852C3B969?method=download&shareKey=c76e893b0711646b4975dfa4d2fa0a1e)
 
 ## 流程图
-
+![流程图](https://note.youdao.com/yws/api/personal/file/6C072CDD1CDD4192A16F3E7DD2B0DFDC?method=download&shareKey=d4ddf93ecffa5edeba7c989fe367835b)
 
 ## 全局说明
 功能权限分为登录/未登录两个状态：
@@ -73,7 +74,7 @@ QA(领头的测试者) | Cherry婵
 - 我的：个人中心、个人信息、个人设置、临时对话框页面
 
 ## Axure交互及设计低保真原型
-
+![产品交互及设计低保真原型](https://note.youdao.com/yws/api/personal/file/B72A932213974366B0A12CFB812D477A?method=download&shareKey=8e08fb597166cd11cb58102ae897a70d)
 
 # Questions：问题
 列出以上需求文件做完旳话可以完成什麽样的问题
