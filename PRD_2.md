@@ -83,7 +83,7 @@ QA(领头的测试者) | Cherry婵
 4. 上传功能
 需调用手机摄像头。
 
-## Axure交互及设计低保真原型
+## [Axure交互及设计低保真原型](http://cherry_chan.gitee.io/api_ml_ai_axure_prototype)
 ![产品交互及设计低保真原型](https://note.youdao.com/yws/api/personal/file/B72A932213974366B0A12CFB812D477A?method=download&shareKey=8e08fb597166cd11cb58102ae897a70d)
 
 # Questions：问题
