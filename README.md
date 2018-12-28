@@ -12,33 +12,23 @@ Developer( 领头的开发者) | [Cherry婵](https://github.com/CherryLiChan)
 QA(领头的测试者) | [Cherry婵](https://github.com/CherryLiChan)
 
 ## Table of contents
-- [产品介绍](#Introduction)
-- [目标](#Goals)
-- [背景](#Background)
-- [战略契合处](#strategic-fit) 
-- [情境假设](#Assumptions)
-- [用户画像](#User-portrait)
-- [需求](#Requirements)
-- [使用者交互及设计](#User-interaction-and-design)
-  - [产品功能架构](#产品功能架构)
-  - [流程图](#流程图)
-  - [全局说明](#全局说明)
-  - [Axure交互及设计低保真原型](#Axure交互及设计低保真原型)
-- [问题](#Questions)
-- [不做](#Not-doing)
-- [迭代](#迭代)
-- [API输入与输出](#API输入与输出)
-  - [自定义模板文字识别API](#自定义模板文字识别API)
-    - [具体自定义步骤及代码](#具体自定义步骤及代码)
-    - [特别注意](#特别注意)
-- [评分量表](#评分量表)
-  - [PRD1.加值宣言](#PRD1加值宣言)
-  - [PRD2.核心价值](#PRD2核心价值)
-  - [PRD3.核心价值与用户痛点](#PRD3核心价值与用户痛点)
-  - [PRD4.人工智能概率性与用户痛点](#PRD4人工智能概率性与用户痛点)
-  - [PRD5.需求列表与人工智能API加值](#PRD5需求列表与人工智能API加值)
-  - [原型1.交互及界面设计&原型2.信息设计](#原型1.交互及界面设计&原型2.信息设计)
-  - [使用水平：API之输入及输出](#使用水平：API之输入及输出)
+产品PRD | 产品原型 | 产品使用关键AI或机器学习之API的输出入展示
+---|--- | ---
+[产品简介](#Introduction) | [使用者交互及设计](#User-interaction-and-design) | [API输入与输出](#API输入与输出)
+[目标](#Goals) | [产品功能架构](#产品功能架构) | [自定义模板文字识别API](#自定义模板文字识别API)
+[背景](#Background) | [流程图](#流程图) | [具体自定义步骤及代码](#具体自定义步骤及代码)
+[战略契合处](#strategic-fit) | [全局说明](#全局说明) | [特别注意](#特别注意)
+[情境假设](#Assumptions) | [Axure交互及设计低保真原型](#Axure交互及设计低保真原型) | [使用水平：API之输入及输出](#使用水平：API之输入及输出)
+[用户画像](#User-portrait) | [原型1.交互及界面设计&原型2.信息设计](#原型1.交互及界面设计&原型2.信息设计) | [使用比较分析](#API2.使用比较分析)
+[需求](#Requirements) |  | [使用后风险报告](API3.使用后风险报告)
+[问题](#Questions) |  | [加分项](API4.加分项)
+[不做](#Not-doing) | 
+[迭代](#迭代) | 
+[PRD1.加值宣言](#PRD1加值宣言)
+[PRD2.核心价值](#PRD2核心价值)
+[PRD3.核心价值与用户痛点](#PRD3核心价值与用户痛点)
+[PRD4.人工智能概率性与用户痛点](#PRD4人工智能概率性与用户痛点)
+[PRD5.需求列表与人工智能API加值](#PRD5需求列表与人工智能API加值)
 
 # Introduction
 > 寻卡通是一款为丢失证件/饭卡的人寻回饭卡，为捡到饭卡的人找到失主，致力于为丢失主与拾取者搭建联系桥梁的人工智能API应用产品。
@@ -161,33 +151,39 @@ QA(领头的测试者) | [Cherry婵](https://github.com/CherryLiChan)
 
 # 评分量表
 ## PRD1加值宣言
-- 自定义模板文字识别API对本产品加值部分在于：1.解放双手，不需要用户逐个缓慢的输入相关信息，只需要上传照片即可把相关信息识别出来。2.此信息可以分类放入数据库，方便后台匹配信息，快速找到失主/拾捡者。
-- 产品文档中“需求”及“背景”“战略契合处”有反映。
+- 自定义模板文字识别API对本产品加值部分在于：
+  - 解放双手，不需要用户逐个缓慢的输入相关信息，只需要上传照片即可把相关信息识别出来。
+  - 此信息可以分类放入数据库，方便后台匹配信息，快速找到失主/拾捡者。
+- 产品文档中“[需求](#Requirements)”及“[背景](#Background)”“[战略契合处](#strategic-fit)”有反映。
 
 ## PRD2核心价值
-- 最小可用产品为识别并提取饭卡上的相关信息。
+- 最小可用产品（产品核心价值）为识别并提取饭卡上的相关信息。
 
 ## PRD3核心价值与用户痛点
 - 解决 “找回饭卡难”和“找不到失主” 的日常校园痛点问题。
-- 产品文档中“需求”及“背景”“战略契合处”有反映。
+- 产品文档中“[需求](#Requirements)”及“[背景](#Background)”“[战略契合处](#strategic-fit)”有反映。
 
 ## PRD4人工智能概率性与用户痛点
 - 自定义模板文字识别已进行训练，在[API使用流程说明](https://github.com/CherryLiChan/API_ML_AI/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AF%B4%E6%98%8E.md)可见训练结果。
-- 预估准确率为94.44%，对用户体验的负面影响不会压过正面影响的机率。
+- 预估准确率为94.44%，对用户体验的负面影响不会压过正面影响的机率。有效解决产品的核心价值和痛点问题。
 
 ## PRD5需求列表与人工智能API加值
-- 产品文档中“需求”部分有反映使用的API加值，
+- 产品文档中“[需求](#Requirements)”部分有反映使用的API加值，
 - 用到的的api有文本识别、信息提取、分类、信息匹配，
 
-## 原型1.交互及界面设计&原型2.信息设计
-- [产品原型展示](http://cherry_chan.gitee.io/api_ml_ai_axure_prototype/#g=1)
+## 原型1.交互及界面设计 & 原型2.信息设计 & 原型文档
+- [产品原型展示和信息设计](http://cherry_chan.gitee.io/api_ml_ai_axure_prototype/#g=1)，包括交互及界面设计、信息设计、原型文档的所有内容。
 - [Gitee-原型下载地址](https://gitee.com/Cherry_Chan/api_ml_ai_axure_prototype)
+- 人工智能的加值部分在原型文档 2.1捡到登记页, 2.2丢失登记页, 3.2系统信息。
 
 ## 使用水平：API之输入及输出
 - [API使用流程说明](https://github.com/CherryLiChan/API_ML_AI/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AF%B4%E6%98%8E.md)
 - [API输入输出代码](https://github.com/CherryLiChan/API_ML_AI/blob/master/python-code.ipynb)
 
 ##### API1.使用水平
+- 输入：饭卡图片；输出：饭卡信息
+- 输入：饭卡信息；输出：后台数据库收集数据、前端发布信息
+- 输入：饭卡信息并成功匹配；输出：系统信息告知用户
 - [API输入输出代码](https://github.com/CherryLiChan/API_ML_AI/blob/master/python-code.ipynb)
 
 #### API2.使用比较分析
@@ -199,5 +195,7 @@ QA(领头的测试者) | [Cherry婵](https://github.com/CherryLiChan)
 - 自定义模板文字识别已进行训练，在[API使用流程说明](https://github.com/CherryLiChan/API_ML_AI/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AF%B4%E6%98%8E.md)可见训练结果。
 - 预估准确率为94.44%，对用户体验的负面影响不会压过正面影响的机率。
 
-#### API4.加分項
-- 用到的的api有文本识别、信息提取、分类、信息匹配
+#### API4.加分项
+- 用到的的api有自定义文字识别、信息提取、分类、信息匹配,具体如下：
+- [API使用流程说明](https://github.com/CherryLiChan/API_ML_AI/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AF%B4%E6%98%8E.md)
+- [API输入输出代码](https://github.com/CherryLiChan/API_ML_AI/blob/master/python-code.ipynb)
