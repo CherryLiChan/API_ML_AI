@@ -3,9 +3,9 @@
 
 Title | content
 ---|---
-Target release(发布日期) | 2018/12/1
+Target release(发布日期) | 2018/12/29
 Epic(史诗名称) | 寻卡通（证件/饭卡寻找辅助器）
-Document status(文档状态) | 进行中
+Document status(文档状态) | 已基本完成
 Document owner( 文件的主人) | [Cherry婵](https://github.com/CherryLiChan)
 Designer( 领头的设计师) | [Cherry婵](https://github.com/CherryLiChan)
 Developer( 领头的开发者) | [Cherry婵](https://github.com/CherryLiChan)
