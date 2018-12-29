@@ -190,10 +190,19 @@ QA(领头的测试者) | [Cherry婵](https://github.com/CherryLiChan)
 - [阿里云-自定义模板](https://help.aliyun.com/document_detail/89067.html)
 - [百度AI开放平台-自定义模板文字识别](https://ai.baidu.com/tech/ocr/iocr)
 - 目前百度的自定义模板文字识别比较常被使用，所以这产品调用了百度AI开放平台的自定义模板文字识别。
+对比项 | 阿里云 | 百度
+---|---|---
+成熟度 | [使用教程完善](https://help.aliyun.com/document_detail/89067.html?spm=a2c4g.11186623.6.565.6b4d7bce7KfMJI)、但[API文档较不完善](https://help.aliyun.com/document_detail/88944.html?spm=a2c4g.11186623.6.556.2e354390eVUSAu) | [文档清晰且详细](http://ai.baidu.com/iocr/#/helpcenter)，预估准确率达到94.44%
+性价比 | [0元/500次,238元/1000次,2008元/1W次](https://market.aliyun.com/products/57124001/cmapi029975.html?spm=5176.11065268.1996646101.searchclickresult.6d954064JXtAAt#sku=yuncode2397500009)等 | 500次/天免费，但[付费开通项](https://console.bce.baidu.com/ai/?fromai=1#/ai/ocr/overview/index)显示完全免费
 
 #### API3.使用后风险报告
 - 自定义模板文字识别已进行训练，在[API使用流程说明](https://github.com/CherryLiChan/API_ML_AI/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AF%B4%E6%98%8E.md)可见训练结果。
 - 预估准确率为94.44%，对用户体验的负面影响不会压过正面影响的机率。
+对比项 | 阿里云 | 百度 | 总结
+---|---|---|---
+API市场竞争程度 | bing搜索排行为第五 | bing搜索排行前五都有 | 市面上百度的应用与使用教程较多，说明百度更有市场优势
+输入输出限制 | 输入图片输出框定的文字内容 | 输入图片输出框定的文字内容 | 输入输出全靠自己的设定（自定义），无法比较
+定价 | [0元/500次,238元/1000次,2008元/1W次](https://market.aliyun.com/products/57124001/cmapi029975.html?spm=5176.11065268.1996646101.searchclickresult.6d954064JXtAAt#sku=yuncode2397500009)等 | 500次/天免费，但[付费开通项](https://console.bce.baidu.com/ai/?fromai=1#/ai/ocr/overview/index)显示完全免费
 
 #### API4.加分项
 - 用到的的api有自定义文字识别、信息提取、分类、信息匹配,具体如下：
