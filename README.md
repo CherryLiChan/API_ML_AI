@@ -202,7 +202,7 @@ QA(领头的测试者) | [Cherry婵](https://github.com/CherryLiChan)
 ---|---|---|---
 API市场竞争程度 | bing搜索排行为第五 | bing搜索排行前五都有 | 市面上百度的应用与使用教程较多，说明百度更有市场优势
 输入输出限制 | 输入图片输出框定的文字内容 | 输入图片输出框定的文字内容 | 输入输出全靠自己的设定（自定义），无法比较
-定价 | [0元/500次,238元/1000次,2008元/1W次](https://market.aliyun.com/products/57124001/cmapi029975.html?spm=5176.11065268.1996646101.searchclickresult.6d954064JXtAAt#sku=yuncode2397500009)等 | 500次/天免费，但[付费开通项](https://console.bce.baidu.com/ai/?fromai=1#/ai/ocr/overview/index)显示完全免费
+定价 | [0元/500次,238元/1000次,2008元/1W次](https://market.aliyun.com/products/57124001/cmapi029975.html?spm=5176.11065268.1996646101.searchclickresult.6d954064JXtAAt#sku=yuncode2397500009)等 | 500次/天免费，但[付费开通项](https://console.bce.baidu.com/ai/?fromai=1#/ai/ocr/overview/index)显示完全免费 | 都是500次/天免费，没试过超额，暂时不知道百度超额后是否仍可用，暂无法比较
 
 #### API4.加分项
 - 用到的的api有自定义文字识别、信息提取、分类、信息匹配,具体如下：
