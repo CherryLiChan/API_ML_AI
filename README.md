@@ -59,7 +59,7 @@ QA(领头的测试者) | [Cherry婵](https://github.com/CherryLiChan)
 - 用户需要在手机上联网使用本产品。
 - 用户在使用上传功能时，需要给出摄像头权限。
 - 用户如果想要收到丢失信息，必须在数据库里拥有一席之地，即先登记信息。需要给出信息通知权限。
-- 所用技术：Python、文本识别API、信息提取和分类、精准匹配。
+- 所用技术：Python、文本识别API、信息提取和分类、入库检索、精准匹配。
 
 # User-portrait
 
@@ -75,7 +75,7 @@ pic | ![用户画像](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_
 ＃ | 标题 | 用户案例 | 重要程度 | 笔记
 ---|---|---|---|---
 1 | 个人物品不见了！ | 用户A一不小心把个人物品弄丢了，立刻来本平台登记丢失信息，静候信息 | 必须有 | 搭建数据库存储信息
-2 | 捡到遗失物品！ | 用户B捡到某同学的遗失物，立刻来本平台上传相关图片信息，把相关信息上传到平台后台 | 必须有 | API文本识别、信息提取、分类等技术
+2 | 捡到遗失物品！ | 用户B捡到某同学的遗失物，立刻来本平台上传相关图片信息，把相关信息上传到平台后台 | 必须有 | API识别、信息提取、分类、入库检索等技术
 3 | 1、2数据匹配 | 后台数据库匹配信息一致，发起临时对话框，并发送提醒信息告知用户 | 必须有 | 信息配对、通知权限
 
 # User-interaction-and-design
@@ -123,26 +123,38 @@ pic | ![用户画像](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_
 1. 数据信息匹配。
 
 # 迭代
-1. 搭建 页面 及 数据库
-2. 实现 遗失者 上传、信息识别提取分类功能
-3. 实现 拾捡者 上传、信息识别提取分类功能
-4. 实现 2、3两点 获得的数据匹配
+1. [搭建 页面 及 数据库](https://github.com/CherryLiChan/LostAndFound)
+2. 实现 遗失者 [上传、信息识别提取分类功能](#API输入与输出)
+3. 实现 拾捡者 [上传、信息识别提取分类功能](#API输入与输出)
+4. 实现 2、3两点 获得的[数据匹配](#API输入与输出)
 5. 为 丢-捡 双方创建联系桥梁
 
 # API输入与输出
-## 自定义模板文字识别API
+## 1.百度-自定义模板文字识别API
+卡类（饭卡）丢失物内容识别
+#### [具体自定义步骤及代码](https://github.com/CherryLiChan/API_ML_AI/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AF%B4%E6%98%8E.md)
 
-#### [具体自定义步骤及代码](https://github.com/CherryLiChan/API_ML_AI/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AF%B4%E6%98%8E.md)：
+## 2.百度-图像搜索-相同/相似图片搜索API
+非卡类丢失物入库与检索
+#### [详细代码示例](https://github.com/CherryLiChan/API_ML_AI/blob/master/python-code-pic.ipynb)
+
+## 3.百度-通用图像分析-通用物体和场景识别API
+自动识别上传的图片里的物品的种类，并取出识别结果，做成产品的分类标签，自动归类用户丢失/拾取到的物品。
+#### [详细代码示例](https://github.com/CherryLiChan/API_ML_AI/blob/master/python-code-tag.ipynb)
 
 # 评分量表
 ## PRD1加值宣言
 - 自定义模板文字识别API对本产品加值部分在于：
   - 解放双手，不需要用户逐个缓慢的输入相关信息，只需要上传照片即可把相关信息识别出来。
   - 此信息可以分类放入数据库，方便后台匹配信息，快速找到失主/拾捡者。
+- 相同/相似图片搜索API对本产品加值部分在于：
+  - 轻松将非卡类丢失物放入库，并提供检索功能（类似于"淘宝扫一扫"的"拍立淘"功能），以便查找匹配找回丢失物/找到失主。
+- 通用物体识别API对本产品加值部分在于：
+  - 自动识别上传的图片里的物品的种类，并取出识别结果，做成产品的分类标签，自动归类用户丢失/拾取到的物品。
 - 产品文档中“[需求](#Requirements)”及“[背景](#Background)”“[战略契合处](#strategic-fit)”有反映。
 
 ## PRD2核心价值
-- 最小可用产品（产品核心价值）为识别并提取上照片上的相关信息。
+- 最小可用产品（产品核心价值）为识别、提取照片上的有用信息，分类放入库并实现库物品的检索。目前[相关代码](#API输入与输出)已实现。
 
 ## PRD3核心价值与用户痛点
 - 解决 “找回遗失物品难”和“找不到失主” 的日常校园痛点问题。
@@ -162,14 +174,14 @@ pic | ![用户画像](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_
 - 人工智能的加值部分在原型文档 2.1捡到登记页, 2.2丢失登记页, 3.2系统信息。
 
 ## 使用水平：API之输入及输出
-- [API使用流程说明](https://github.com/CherryLiChan/API_ML_AI/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AF%B4%E6%98%8E.md)
-- [API输入输出代码](https://github.com/CherryLiChan/API_ML_AI/blob/master/python-code.ipynb)
+- [自定义模板文字识别API使用流程说明](https://github.com/CherryLiChan/API_ML_AI/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AF%B4%E6%98%8E.md)
+- [所有API输入输出代码](#API输入与输出)
 
 ##### API1.使用水平
 - 输入：遗失物品图片；输出：遗失物品识别信息
 - 输入：遗失物品识别信息；输出：后台数据库收集数据、前端发布信息
 - 输入：信息成功匹配；输出：系统信息告知用户
-- [API输入输出代码](https://github.com/CherryLiChan/API_ML_AI/blob/master/python-code.ipynb)
+- [所有API输入输出代码](#API输入与输出)
 
 #### API2.使用比较分析
 - [阿里云-自定义模板](https://help.aliyun.com/document_detail/89067.html)
@@ -192,6 +204,6 @@ API市场竞争程度 | bing搜索排行为第五 | bing搜索排行前五都有
 定价 | [0元/500次,238元/1000次,2008元/1W次](https://market.aliyun.com/products/57124001/cmapi029975.html?spm=5176.11065268.1996646101.searchclickresult.6d954064JXtAAt#sku=yuncode2397500009)等 | 500次/天免费，但[付费开通项](https://console.bce.baidu.com/ai/?fromai=1#/ai/ocr/overview/index)显示完全免费 | 都是500次/天免费，没试过超额，暂时不知道百度超额后是否仍可用，暂无法比较
 
 #### API4.加分项
-- 用到的的api有自定义文字识别、信息提取、分类、信息匹配,目前以做到自定义文字识别、信息提取、分类，正在尝试把数据放入数据库并进行数据库的信息匹配，具体如下：
-- [API使用流程说明](https://github.com/CherryLiChan/API_ML_AI/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AF%B4%E6%98%8E.md)
-- [API输入输出代码](https://github.com/CherryLiChan/API_ML_AI/blob/master/python-code.ipynb)
+- 用到的的api有自定义模板文字识别API、相同/相似图片搜索API、通用物体和场景识别API，做到卡类遗失物的文本内容提取、物品归类、非卡类遗失物入库与检索，具体如下：
+- [自定义模板文字识别API使用流程说明](https://github.com/CherryLiChan/API_ML_AI/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AF%B4%E6%98%8E.md)
+- [所有API输入输出代码](#API输入与输出)
