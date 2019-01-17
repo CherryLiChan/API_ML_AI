@@ -207,3 +207,18 @@ API市场竞争程度 | bing搜索排行为第五 | bing搜索排行前五都有
 - 用到的的api有自定义模板文字识别API、相同/相似图片搜索API、通用物体和场景识别API，做到卡类遗失物的文本内容提取、物品归类、非卡类遗失物入库与检索，具体如下：
 - [自定义模板文字识别API使用流程说明](https://github.com/CherryLiChan/API_ML_AI/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AF%B4%E6%98%8E.md)
 - [所有API输入输出代码](#API输入与输出)
+
+## 清单
+
+类别 | 内容 | 超链结 | 
+---|---|---
+参考文献一 | [高校失物招领网络平台的发展与管理](http://kns.cnki.net/KXReader/Detail?TIMESTAMP=636825361153921250&DBCODE=CJFD&TABLEName=CJFDTEMP&FileName=GDCY201812079&RESULT=1&SIGN=zpS2mV2GfIJXYJH29uYKXkdkeD4%3d&UID=WEEvREcwSlJHSldRa1FhdkJkVG1CTTVTMmx6cnJzSkRibUxUZlpnODZJQT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&filetitle=%e9%ab%98%e6%a0%a1%e5%a4%b1%e7%89%a9%e6%8b%9b%e9%a2%86%e7%bd%91%e7%bb%9c%e5%b9%b3%e5%8f%b0%e7%9a%84%e5%8f%91%e5%b1%95%e4%b8%8e%e7%ae%a1%e7%90%86_%e7%8e%8b%e5%b0%9a%e6%9d%b0) | http://kns.cnki.net/KXReader/Detail?TIMESTAMP=636825361153921250&DBCODE=CJFD&TABLEName=CJFDTEMP&FileName=GDCY201812079&RESULT=1&SIGN=zpS2mV2GfIJXYJH29uYKXkdkeD4%3d&UID=WEEvREcwSlJHSldRa1FhdkJkVG1CTTVTMmx6cnJzSkRibUxUZlpnODZJQT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&filetitle=%e9%ab%98%e6%a0%a1%e5%a4%b1%e7%89%a9%e6%8b%9b%e9%a2%86%e7%bd%91%e7%bb%9c%e5%b9%b3%e5%8f%b0%e7%9a%84%e5%8f%91%e5%b1%95%e4%b8%8e%e7%ae%a1%e7%90%86_%e7%8e%8b%e5%b0%9a%e6%9d%b0
+参考文献二 | [《大学校园失窃现象调查报告分析》](http://www.docin.com/p-588153652.html) | http://www.docin.com/p-588153652.html
+参考文献三 | [《关于青岛高校学生在校遗失物调查报告》](http://www.docin.com/p-441578603.html?qq-pf-to=pcqq.c2c) | http://www.docin.com/p-441578603.html?qq-pf-to=pcqq.c2c
+附件1.0 | [Axure交互设计低保真原型和信息设计展示](http://cherry_chan.gitee.io/api_ml_ai_axure_prototype/#g=1) | http://cherry_chan.gitee.io/api_ml_ai_axure_prototype/#g=1
+附件1.1 | [Gitee-原型下载地址](https://gitee.com/Cherry_Chan/api_ml_ai_axure_prototype) | https://gitee.com/Cherry_Chan/api_ml_ai_axure_prototype
+附件2.0 | [数据库及页面搭建](https://github.com/CherryLiChan/LostAndFound) | https://github.com/CherryLiChan/LostAndFound
+附件3.0 | [自定义模板识别API使用流程详解](https://github.com/CherryLiChan/API_ML_AI/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AF%B4%E6%98%8E.md) | https://github.com/CherryLiChan/API_ML_AI/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E6%9D%BF%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AF%B4%E6%98%8E.md
+附件3.1 | [自定义模板识别API代码输入与输出](https://github.com/CherryLiChan/API_ML_AI/blob/master/python-code.ipynb) | https://github.com/CherryLiChan/API_ML_AI/blob/master/python-code.ipynb
+附件4.0 | [相同/相似图片搜索API代码输入与输出](https://github.com/CherryLiChan/API_ML_AI/blob/master/python-code-pic.ipynb) | https://github.com/CherryLiChan/API_ML_AI/blob/master/python-code-pic.ipynb
+附件5.0 | [通用物体和场景识别API代码输入与输出](https://github.com/CherryLiChan/API_ML_AI/blob/master/python-code-tag.ipynb) | https://github.com/CherryLiChan/API_ML_AI/blob/master/python-code-tag.ipynb
