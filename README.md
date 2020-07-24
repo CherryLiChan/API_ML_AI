@@ -1,4 +1,4 @@
-# AI_Identify_card：寻卡通
+# AI_Identify_card：寻物通
 # Product Requirements：产品需求
 
 Title | content
